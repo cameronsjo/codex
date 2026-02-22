@@ -1,5 +1,5 @@
 ---
-name: codex-init
+name: init
 description: Install codex rules to ~/.claude/rules/. Self-destructs after running so it reappears when the plugin updates with new rules.
 ---
 
@@ -37,8 +37,8 @@ Install interaction patterns, session management, and workflow rules from the co
 
 7. **Self-destruct** - After successful installation:
    - Find this plugin's cache directory by looking for `codex` plugin in `~/.claude/plugins/cache/`
-   - Delete ONLY this command file from the cached copy: `~/.claude/plugins/cache/*/codex/commands/codex-init.md`
-   - Explain to the user: "The codex-init command has been removed from your local cache. It will reappear next time the codex plugin updates, prompting you to install any new or changed rules."
+   - Delete ONLY this command file from the cached copy: `~/.claude/plugins/cache/*/codex/commands/init.md`
+   - Explain to the user: "The codex:init command has been removed from your local cache. It will reappear next time the codex plugin updates, prompting you to install any new or changed rules."
 
 8. **Summary** - Show what was installed, skipped, merged, and cleaned up. Then display an advisory message:
 
