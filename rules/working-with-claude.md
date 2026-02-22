@@ -6,7 +6,6 @@
 - **MUST** check obvious issues first (typos, imports, env)
 - **MUST** use TodoWrite for multi-step tasks
 - **MUST** create and maintain knowledge bases in repos/projects for context between sessions
-- **SHOULD** use parallelization when possible (multiple tool calls in one message)
 
 ## Using Agents & Skills
 

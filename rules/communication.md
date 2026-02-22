@@ -10,5 +10,4 @@
 
 - **MUST NOT** write multi-line bash (loops, conditionals, pipes > 2 stages) as inline commands
 - **MUST** write a script file in `scripts/` for anything beyond a single simple command, then execute it
-- **MUST** prefer Glob, Grep, Read over bash equivalents (find, grep, cat) — always
 - **SHOULD** use xargs or parallel patterns over for-loops when iterating
