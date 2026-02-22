@@ -1,0 +1,49 @@
+# Working with Claude
+
+## Core Patterns
+
+- **MUST** provide code first, explanations after — complete working examples with error handling
+- **MUST** check obvious issues first (typos, imports, env)
+- **MUST** use TodoWrite for multi-step tasks
+- **MUST** create and maintain knowledge bases in repos/projects for context between sessions
+- **SHOULD** use parallelization when possible (multiple tool calls in one message)
+
+## Using Agents & Skills
+
+**Core Principle:** Use agents for complex/multi-step tasks. Use direct tools for simple operations.
+
+**When to Use Agents:**
+
+- **Exploration**: "find X", "how does Y work?", "where is Z?" -> use `Explore` agent
+- **Multi-step research**: Search, analyze, and synthesize across multiple files
+- **Specialized work**: python-expert, security-auditor, mcp-expert, etc.
+- **Parallel work**: Launch multiple agents simultaneously for independent tasks
+- **Complex debugging**: Investigation requiring multiple rounds of searching/testing
+
+**When NOT to Use Agents:**
+
+- Reading 1-2 specific known files (use `Read`)
+- Searching for exact class/function name (use `Glob`/`Grep`)
+- Simple edits to known files (do directly)
+
+**Key Practices:**
+
+- Launch agents in parallel when possible (single message, multiple Task calls)
+- Specify thoroughness for Explore: "quick", "medium", or "very thorough"
+
+## Auto Memory
+
+Persistent notes Claude writes for itself across sessions. Stored in `~/.claude/projects/<project>/memory/`. First 200 lines of `MEMORY.md` load at session start; topic files read on demand.
+
+- **MUST** keep `MEMORY.md` under 200 lines — move details to topic files
+- **SHOULD** record debugging insights, project patterns, architecture notes, and workflow preferences
+- **SHOULD** review and prune stale memories periodically
+
+## Agent Teams
+
+Agent teams coordinate multiple Claude Code instances working together. Use for parallel reviews, cross-layer changes needing coordination, multi-angle research, or large refactors. Don't use for tasks a single subagent handles fine, sequential work, or quick lookups.
+
+- **MUST** size tasks appropriately — target 5-6 tasks per teammate
+- **MUST** avoid file conflicts — two teammates editing the same file causes overwrites
+- **SHOULD** start with research/review tasks before using teams for code-writing
+- **SHOULD** give spawn prompts full context — teammates get CLAUDE.md but NOT the lead's conversation history
