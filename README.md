@@ -2,7 +2,7 @@
 
 Personal codex for Claude Code — how I work, communicate, and manage sessions. Opinionated, universal, mine.
 
-Designed to be installed alongside the [rules](https://github.com/cameronsjo/rules) plugin. Rules covers *how to write code*. Codex covers *how to work with me*.
+Designed to be installed alongside the [rules](https://github.com/cameronsjo/rules) plugin. Rules covers *how to work with code*. Codex covers *how to work with me*.
 
 ## Rules
 
