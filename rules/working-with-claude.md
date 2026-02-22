@@ -47,3 +47,20 @@ Agent teams coordinate multiple Claude Code instances working together. Use for 
 - **MUST** avoid file conflicts — two teammates editing the same file causes overwrites
 - **SHOULD** start with research/review tasks before using teams for code-writing
 - **SHOULD** give spawn prompts full context — teammates get CLAUDE.md but NOT the lead's conversation history
+- **SHOULD** encourage running in tmux so the user can observe agents working in parallel
+
+### tmux Quick Reference
+
+Suggest before spawning a team:
+
+> **Getting in:** `tmux new -s agents` (or use `Ctrl+a T` / `Cmd+K` to pick an existing session via sesh)
+>
+> **Splitting panes:** `Ctrl+a |` (side-by-side) · `Ctrl+a -` (stacked)
+>
+> **Moving between panes:** `Ctrl+a h/j/k/l` (vim-style) · `Alt+Arrow`
+>
+> **Zooming:** `Ctrl+a z` (toggle fullscreen on current pane)
+>
+> **Scrolling:** `Ctrl+a [` (scroll mode, `j/k` to scroll, `q` to exit)
+>
+> **Cleanup:** `Ctrl+a x` (close pane) · `cs` (full cheatsheet)
