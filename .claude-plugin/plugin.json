@@ -1,0 +1,17 @@
+{
+  "name": "codex",
+  "description": "Personal codex: interaction patterns, session management, plan discipline, communication style",
+  "author": {
+    "name": "cameronsjo"
+  },
+  "keywords": [
+    "codex",
+    "workflow",
+    "communication",
+    "session",
+    "plan-execution",
+    "constraints",
+    "agents",
+    "teams"
+  ]
+}
