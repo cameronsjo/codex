@@ -1,3 +1,4 @@
+<!-- managed by codex — changes will be overwritten by /codex:init -->
 # Working with Claude
 
 ## Core Patterns

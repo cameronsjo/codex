@@ -1,3 +1,4 @@
+<!-- managed by codex — changes will be overwritten by /codex:init -->
 # Guiding Principles
 
 - **Use what we build** — dogfood relentlessly

@@ -1,3 +1,4 @@
+<!-- managed by codex — changes will be overwritten by /codex:init -->
 # Plan Execution Discipline
 
 Plans are contracts, not suggestions.

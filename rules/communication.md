@@ -1,3 +1,4 @@
+<!-- managed by codex — changes will be overwritten by /codex:init -->
 # Communication
 
 - **MUST** request clarification when requirements are ambiguous

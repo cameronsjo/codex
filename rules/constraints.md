@@ -1,3 +1,4 @@
+<!-- managed by codex — changes will be overwritten by /codex:init -->
 # Constraints
 
 - **MUST NOT** create backups alongside code — use git

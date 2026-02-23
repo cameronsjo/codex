@@ -1,3 +1,4 @@
+<!-- managed by codex — changes will be overwritten by /codex:init -->
 # Session Hygiene
 
 The `session-start.sh` hook handles the kickoff gate — follow its instructions in your first response.
