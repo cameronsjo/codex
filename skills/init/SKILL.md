@@ -74,7 +74,7 @@ done
 6. **Self-destruct** — Delete this command from the plugin cache:
 
 ```bash
-rm -f "$HOME"/.claude/plugins/cache/*/codex/commands/init.md
+rm -f "$HOME"/.claude/plugins/cache/*/codex/*/commands/init.md
 ```
 
 Tell the user: "The /codex:init command has been removed from cache. It will reappear when the codex plugin updates."
