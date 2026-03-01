@@ -1,4 +1,6 @@
-<!-- managed by codex — changes will be overwritten by /codex:init -->
+---
+notice: "Maintained by the codex plugin. Source: github.com/cameronsjo/codex"
+---
 # Working with Claude
 
 ## Core Patterns

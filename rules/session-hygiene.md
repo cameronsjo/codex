@@ -1,4 +1,6 @@
-<!-- managed by codex — changes will be overwritten by /codex:init -->
+---
+notice: "Maintained by the codex plugin. Source: github.com/cameronsjo/codex"
+---
 # Session Hygiene
 
 The `session-start.sh` hook handles the kickoff gate — follow its instructions in your first response.

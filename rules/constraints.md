@@ -1,4 +1,6 @@
-<!-- managed by codex — changes will be overwritten by /codex:init -->
+---
+notice: "Maintained by the codex plugin. Source: github.com/cameronsjo/codex"
+---
 # Constraints
 
 - **MUST NOT** create backups alongside code — use git
