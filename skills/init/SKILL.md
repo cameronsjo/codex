@@ -29,7 +29,7 @@ for old in "$OLD_DEST"/codex-*.md; do
 done
 ```
 
-2. **Hash compare** — Run this bash script to produce a manifest. Do NOT read any rule file contents yet.
+2. **Hash compare** — Run this bash script to produce a manifest. Skip reading file contents at this step.
 
 ```bash
 DEST="$HOME/.claude/rules/codex"
@@ -93,6 +93,5 @@ Remind user to restart Claude Code.
 - Source: `${CLAUDE_PLUGIN_ROOT}/rules/` — Destination: `~/.claude/rules/codex/`
 - No prefix — files keep their original basename
 - Files outside `codex/` are user-managed and never touched
-- For UPDATED files, READ both source and destination, MERGE intelligently, then WRITE. Do NOT overwrite blindly
 - Self-destruct targets the CACHE copy, not the source repo
-- This command does NOT modify CLAUDE.md — the advisory is informational only
+- This command does not modify CLAUDE.md — the advisory is informational only
