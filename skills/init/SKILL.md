@@ -29,7 +29,7 @@ for old in "$OLD_DEST"/codex-*.md; do
 done
 ```
 
-2. **Hash compare** — Run this bash script to produce a manifest. Skip reading file contents at this step.
+2. **Hash compare** — Run this bash script to produce a manifest. Do NOT read any rule file contents yet.
 
 ```bash
 DEST="$HOME/.claude/rules/codex"
