@@ -1,6 +1,6 @@
 {
   "name": "codex",
-  "description": "How to work with me — interaction patterns, session management, plan discipline, communication style",
+  "description": "How to work with me \u2014 interaction patterns, session management, plan discipline, communication style",
   "author": {
     "name": "cameronsjo"
   },
@@ -13,5 +13,6 @@
     "constraints",
     "agents",
     "teams"
-  ]
+  ],
+  "version": "0.0.0"
 }
