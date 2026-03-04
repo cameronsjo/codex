@@ -1,6 +1,10 @@
 ---
 name: init
 description: Install codex rules to ~/.claude/rules/codex/. Self-destructs after running so it reappears when the plugin updates with new rules.
+license: MIT
+metadata:
+  author: cameronsjo
+  version: "1.0"
 ---
 
 Install all codex rules to `$HOME/.claude/rules/codex/`. Installs everything by default — no scope selection needed.

@@ -1,6 +1,10 @@
 ---
 name: license-advisor
 description: Interview-driven license selection for projects. Asks about goals, audience, and monetization risk, then recommends a license with rationale.
+license: MIT
+metadata:
+  author: cameronsjo
+  version: "1.0"
 ---
 
 Help the user choose the right software license for a project through a structured interview, scoping analysis, and tailored recommendation.
