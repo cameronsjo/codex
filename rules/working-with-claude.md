@@ -30,16 +30,16 @@ notice: "Maintained by the codex plugin. Source: github.com/cameronsjo/codex"
 
 **Key Practices:**
 
-- Launch agents in parallel when possible (single message, multiple Task calls)
+- Launch agents in parallel when possible (single message, multiple Agent calls)
 - Specify thoroughness for Explore: "quick", "medium", or "very thorough"
 
 ## Auto Memory
 
-Persistent notes Claude writes for itself across sessions. Stored in `~/.claude/projects/<project>/memory/`. First 200 lines of `MEMORY.md` load at session start; topic files read on demand.
+Claude automatically saves useful context to auto memory across sessions. Stored in `~/.claude/projects/<project>/memory/`. First 200 lines of `MEMORY.md` load at session start; topic files read on demand. Manage via `/memory`. Override path with `CLAUDE_CODE_AUTO_MEMORY_PATH` env var.
 
 - **MUST** keep `MEMORY.md` under 200 lines — move details to topic files
-- **SHOULD** record debugging insights, project patterns, architecture notes, and workflow preferences
-- **SHOULD** review and prune stale memories periodically
+- **SHOULD** review and prune stale or incorrect memories periodically
+- **SHOULD** manually save key decisions, architecture patterns, and workflow preferences that auto-save might miss
 
 ## Agent Teams
 
